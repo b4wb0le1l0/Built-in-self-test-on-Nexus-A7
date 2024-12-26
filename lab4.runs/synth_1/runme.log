@@ -1,0 +1,517 @@
+
+*** Running vivado
+    with args -log bist.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bist.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bist.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 353.707 ; gain = 59.336
+Command: synth_design -top bist -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4064 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 809.648 ; gain = 177.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bist' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/bist.v:3]
+	Parameter IDLE bound to: 3'b000 
+	Parameter LFSR bound to: 3'b001 
+	Parameter LFSR_WAIT bound to: 3'b010 
+	Parameter FUNC bound to: 3'b011 
+	Parameter FUNC_WAIT bound to: 3'b100 
+	Parameter CRC8_WAIT bound to: 3'b110 
+	Parameter TEST_START bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'button' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/button.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'button' (1#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/button.v:3]
+INFO: [Synth 8-6157] synthesizing module 'functer' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v:60]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter SQUARE_X_B bound to: 4'b0001 
+	Parameter WAIT_SQUARE_B bound to: 4'b0010 
+	Parameter COMPARE_XY_B bound to: 4'b0011 
+	Parameter SQUARE_X bound to: 4'b0100 
+	Parameter CUBE_X bound to: 4'b0101 
+	Parameter COMPARE_XY bound to: 4'b0110 
+	Parameter SUM bound to: 4'b0111 
+	Parameter WAIT_SQUARE bound to: 4'b1000 
+	Parameter WAIT_CUBE bound to: 4'b1001 
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v:3]
+	Parameter IDLE bound to: 1'b0 
+	Parameter WORK bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'mult' (2#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'functer' (3#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v:60]
+INFO: [Synth 8-6157] synthesizing module 'lfsr1' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr1.v:3]
+	Parameter LFSR bound to: 8'b11001001 
+	Parameter IDLE bound to: 2'b00 
+	Parameter CALC bound to: 2'b01 
+	Parameter FINISH bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr1.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr1' (4#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lfsr2' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr2.v:3]
+	Parameter LFSR bound to: 8'b00110101 
+	Parameter IDLE bound to: 2'b00 
+	Parameter CALC bound to: 2'b01 
+	Parameter FINISH bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr2.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr2' (5#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'crc8' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/crc8.v:3]
+	Parameter IDLE bound to: 2'b00 
+	Parameter TAKE_CUR_BIT bound to: 2'b01 
+	Parameter CALC_CRC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/crc8.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'crc8' (6#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/crc8.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/bist.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'bist' (7#1) [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/bist.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 874.484 ; gain = 242.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 874.484 ; gain = 242.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 874.484 ; gain = 242.047
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/constrs_1/new/config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/constrs_1/new/config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bist_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bist_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 999.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 999.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'functer'
+INFO: [Synth 8-5544] ROM "sum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lfsr1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lfsr2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'crc8'
+INFO: [Synth 8-4471] merging register 'lfsr2_start_reg' into 'lfsr1_start_reg' [C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/bist.v:95]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bist'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                             0000
+              SQUARE_X_B |                       0000000010 |                             0001
+           WAIT_SQUARE_B |                       0000000100 |                             0010
+            COMPARE_XY_B |                       0000001000 |                             0011
+                     SUM |                       0000010000 |                             0111
+                SQUARE_X |                       0000100000 |                             0100
+             WAIT_SQUARE |                       0001000000 |                             1000
+                  CUBE_X |                       0010000000 |                             0101
+               WAIT_CUBE |                       0100000000 |                             1001
+              COMPARE_XY |                       1000000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'functer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    CALC |                              010 |                               01
+                  FINISH |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lfsr1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    CALC |                              010 |                               01
+                  FINISH |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lfsr2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            TAKE_CUR_BIT |                               01 |                               01
+                CALC_CRC |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'crc8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                              000
+                    FUNC |                          0000010 |                              011
+               FUNC_WAIT |                          0000100 |                              100
+               CRC8_WAIT |                          0001000 |                              110
+              TEST_START |                          0010000 |                              111
+                    LFSR |                          0100000 |                              001
+               LFSR_WAIT |                          1000000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'bist'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 17    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bist 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 11    
+Module button 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mult 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module functer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module lfsr1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module lfsr2 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module crc8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'func/mult1_reg1_reg[5]' (FDE) to 'func/mult1_reg1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'func/mult1_reg1_reg[6]' (FDE) to 'func/mult1_reg1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\func/mult1_reg1_reg[7] )
+INFO: [Synth 8-3886] merging instance 'func/multiplier1/a_reg[5]' (FDE) to 'func/multiplier1/a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'func/multiplier1/a_reg[6]' (FDE) to 'func/multiplier1/a_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\func/multiplier1/a_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 999.480 ; gain = 367.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1001.379 ; gain = 368.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    15|
+|3     |LUT1   |     6|
+|4     |LUT2   |    43|
+|5     |LUT3   |    52|
+|6     |LUT4   |    61|
+|7     |LUT5   |    34|
+|8     |LUT6   |    48|
+|9     |FDRE   |   231|
+|10    |FDSE   |    21|
+|11    |IBUF   |    20|
+|12    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |   550|
+|2     |  crc8_obj      |crc8     |    43|
+|3     |  func          |functer  |   250|
+|4     |    multiplier1 |mult     |   158|
+|5     |  lfsr1_obj     |lfsr1    |    39|
+|6     |  lfsr2_obj     |lfsr2    |    41|
+|7     |  start_button  |button   |    10|
+|8     |  test_button   |button_0 |    10|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1008.211 ; gain = 375.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:00 . Memory (MB): peak = 1008.211 ; gain = 250.777
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1008.211 ; gain = 375.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1024.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1024.234 ; gain = 670.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1024.234 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.runs/synth_1/bist.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bist_utilization_synth.rpt -pb bist_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 18:00:21 2024...

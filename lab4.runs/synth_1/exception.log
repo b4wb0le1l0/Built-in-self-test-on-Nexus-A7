@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\Agasha\Documents\University\FunctionalCircuitDesign\lab4\code\lab4\lab4.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Разрешение отклонено

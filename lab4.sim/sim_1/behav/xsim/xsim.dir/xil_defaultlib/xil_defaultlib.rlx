@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sim_1/new/bist_normal_tb.v,1735044755,verilog,,,,bist_normal_tb,,,,,,,,
+,,,,,,bist_testmode_tb,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sim_1/new/functer_tb.v,1735043758,verilog,,,,functer_tb,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/bist.v,1735049215,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/button.v,,bist,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/button.v,1735048589,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/crc8.v,,button,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/crc8.v,1735048589,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v,,crc8,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/functer.v,1735048589,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr1.v,,functer;mult,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr1.v,1735048589,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr2.v,,lfsr1,,,,,,,,
+C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sources_1/new/lfsr2.v,1735043757,verilog,,C:/Users/Agasha/Documents/University/FunctionalCircuitDesign/lab4/code/lab4/lab4.srcs/sim_1/new/bist_testmode_tb.v,,lfsr2,,,,,,,,
